@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function convert() {
+
+            let tempratureInput = document.getElementById("TempratureInput");
+            let unitSelect = document.getElementById("Unit");
+            let resultSpan = document.getElementById("result");
+
+            
+            let temperature = +(tempratureInput.value);
+            let unit = unitSelect.value;
+        
+
+
+            if (unit === "Celsius") {
+                var convertedTemperature = (temperature * 1.8) + 32;
+            } else {
+                var convertedTemperature = (temperature - 32) / 1.8;
+            }
+            resultSpan.textContent = convertedTemperature.toFixed(2);
+        }
+    </script>
+    
+    <h1>Temperature Converter</h1>
+    
+    <form>
+        Enter Your Temperature: <input type="number" id="TempratureInput">
+       
+        <select id="Unit">
+            <option value="Celsius"> Celsius </option>
+            <option value="Fahrenheit"> Fahrenheit </option>
+        </select>
+    
+       
+    </form>
+
+    <button onclick="convert()"> Convert </button>
+
+    <p>Your Temperature is: <span id="result"></span> </p>
+            
+</body>
+</html>

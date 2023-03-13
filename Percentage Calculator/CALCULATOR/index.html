@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<H1>Marks Percentage Calculator
+</H1>
+<h2>Enter Your Marks!</h2> <hr>
+
+<script>
+    function calculate() {
+        
+        var obtainedmarks = (document.getElementById("obtainedmarks").value);
+        var Totalmarks = (document.getElementById("totalmarks").value);
+        var Percentage =  (obtainedmarks *100) / Totalmarks;
+        document.getElementById ("Percentage").innerHTML = Percentage;
+    }
+</script>
+
+<div>
+    Obtained Marks: <input id="obtainedmarks" value="obtainedmarks" type="number" >
+</div>
+
+   <div>
+     Toatal Marks: <input id="totalmarks" value="Totalmarks" type="number">
+   </div>
+
+<button onclick="calculate()"> Calculate Percentage </button>
+
+<div>Your Percentage is: <span id="Percentage"></span>%
+<div>
+
+
+</body>
+</html>
