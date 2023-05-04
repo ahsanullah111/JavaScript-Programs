@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVEN & ODD</title>
+
+    <script src = "./index.js" defer></script>
+
+    <style>
+        body{
+            padding: 50px 100px;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        p{
+            color: rgba(255, 0, 13, 0.777);
+            font-size: 20px;
+        }
+
+        #container{
+            text-align: center;
+            background-color: #33c2ed;
+            padding: 50px;
+        }
+
+        .inputDiv{
+            display: inline-block;
+        }
+
+        .inp{
+            padding: 5px 10px;
+            margin: 10px;
+            font-size: 30px;
+            font-weight: bold;
+            width: 250px;
+            text-align: center;
+        }
+        
+        label{
+            font-size: 22px;
+        }
+
+
+    .container2{
+        text-align: center;
+        background-color: beige;
+    }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>
+        EVEN ODD NUMBER PROGRAM
+    </h1>
+
+    <form id="container" onsubmit="Calculate(); return false">
+
+        <div class="inputDiv">
+            <label>Enter a Number</label>
+            <br>
+            <input type="number" value="0" id="inp" class="inp">
+        </div>
+        <p><strong><em>If Result is 0 than its means you entered an Even Value <br> If Result is 1 than its means you entered an Odd Value </em></strong></p>
+
+    </form>
+
+    <div class = "container2">
+
+        <h2 id="showVal">
+            
+        </h2>
+
+    </div>
+
+</body>
+
+</html>

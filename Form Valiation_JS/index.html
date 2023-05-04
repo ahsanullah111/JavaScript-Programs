@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+
+    <script src="/JS/index.js" defer></script>
+
+    <style>
+        body {
+            background-color: #3498db;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh
+        }
+
+        #formContainer {
+            background-color: #ffffff;
+            padding: 50px;
+            text-align: center;
+        }
+
+        h2 {
+            margin: 0px 0px 10px 0px
+        }
+
+        input {
+            width: 200px;
+            margin: 0;
+            padding: 10px;
+        }
+
+        input[type="submit"] {
+            width: 222px;
+            background-color: #3498db;
+            border: 0px;
+            color: #ffffff;
+        }
+
+        .error{
+            color: red;
+            text-align: left;
+        }
+
+        .ok{
+            color: rgb(22, 233, 22);
+            text-align: left;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="formContainer">
+        <h2>Login</h2>
+        <form action="" onsubmit="return validateFrom()">
+            <input type="text" placeholder="User Name" id="username">
+            
+            <br>
+            
+            <p id = "usernameMsg"></p>
+
+            <br>
+            
+            <input type="password" placeholder="Password" id="password">
+            
+            <br>
+            
+            <p id="passwordMsg"></p>
+            
+            <br>
+            
+            <input type="submit">
+        </form>
+    </div>
+</body>
+
+</html>
